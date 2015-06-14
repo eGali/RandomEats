@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/android_blue"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/name"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/address"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/phone"
+        android:textSize="20sp"/>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tableLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:id="@+id/share"
+                android:layout_gravity="end"
+                android:background="@drawable/friends" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/favorite"
+                android:id="@+id/favorite"
+                android:layout_gravity="center_horizontal"/>
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/direction"
+                android:id="@+id/nav" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:background="@drawable/call"
+                android:id="@+id/call" />
+        </TableRow>
+    </TableLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image_content"
+        android:id="@+id/image"/>
+</LinearLayout>
