@@ -1,4 +1,4 @@
 # RandomEats
 
 CS 454
-Randomly display restaurants near you
+Android application to randomly display restaurants near you
